@@ -2142,14 +2142,24 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?googlevideo\\.com[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": [
+          "third-party",
+          "first-party
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?doubleclick\\.net[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": [
-        "third-party"
-      ],
-      "unless-domain": [
-        "www.youtube.com",
-        "m.youtube.com"
+          "third-party",
+          "first-party
       ]
     },
     "action": {
